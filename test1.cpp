@@ -5,16 +5,10 @@ int main()
     int n;
     cout<<"enter the number "<<endl;
     cin>>n;
-    for (int i=0 ;i<n;i++)
-    {
-        for (int j=n;j>0;j--)
-        {
-            if(i>2 && i<n-j)
-            {
-                 cout<<"*";
-            }
-
-        }
-        cout<<endl;
+    while(n){
+        int res=n%10;
+        cout<<res;
+        n=n/10;
     }
-}
+    }
+
